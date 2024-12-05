@@ -8,23 +8,243 @@ Requirements
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a Static Background Image
 [ no ] Feature 2 - Use a unique border-radius
-[ no ] Feature 3 - Use width and margin CSS Properties
+[ yes] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        color: rgb(241, 238, 220);
+      }
+      h2 {
+        color: rgb(229, 221, 197);
+      }
+      h3 {
+        color: rgb(241, 238, 220);
+      }
+      #Recipe {
+        font-family: "Edu AU VIC WA NT Arrows", cursive;
+        font-size: 30px;
+      }
+      #Instructions {
+        font-family: "Edu AU VIC WA NT Arrows", cursive;
+        font-size: 30px;
+      }
+      .Time {
+        color: rgb(238, 224, 201);
+      }
+      .Serves {
+        color: rgb(238, 224, 201);
+      }
+      #Steps {
+        color: rgb(179, 200, 207);
+      }
+      .Stuff {
+        background: rgb(238, 224, 201);
+        width: 100%;
+        height: 50%;
+      }
+      #Table {
+        background-color: rgb(238, 224, 201);
+        display: flex;
+        height: 300px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .Image1 {
+        margin: 20px;
+        border: 5px #eee0c9;
+        padding: 5px;
+      }
+      .Image2 {
+        margin: 20px;
+        border: 5px #eee0c9;
+        padding: 5px;
+      }
+      .Image3 {
+        margin: 20px;
+        border: 5px #eee0c9;
+        padding: 5px;
+      }
+      .Image4 {
+        margin: 20px;
+        border: 5px #eee0c9;
+        padding: 5px;
+      }
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+      body {
+        background-color: rgb(179, 200, 207);
 
-  </style>
-</head>
-<body>
+        margin: auto;
+        width: 60%;
+      }
 
- 
+      img {
+        object-fit: cover;
+      }
+      table,
+      th,
+      td {
+        color: rgb(179, 200, 207);
+        border: 1px solid;
+      }
+    </style>
+  </head>
 
-</body>
+  <body>
+    <h1>Raquel's Book of Pancakes</h1>
+    <img
+      class="Image1"
+      src="https://www.recipetineats.com/tachyon/2019/01/Blueberry-Pancakes_8.jpg"
+      alt="blueberry pancakes stacked on top of each other with maple syrup dripping down"
+      width="95"
+      height="150"
+    />
+    <img
+      class="Image2"
+      src="https://www.modernhoney.com/wp-content/uploads/2023/05/Chocolate-Chip-Pancakes-3.jpg"
+      alt="Chocolate chip pancakes with powdered sugar and maple syrup"
+      width="95"
+      height="150"
+    />
+    <img
+      class="Image3"
+      src="https://www.allrecipes.com/thmb/6x0Lw9L4MEU8INHnK4tXGRV9XWI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20334-banana-pancakes-i-DDMFS-4x3-9f291f03044247d48c9ec26917952402.jpg"
+      alt="banana pancakes with lots of maply syrup"
+      width="95"
+      height="150"
+    />
+    <img
+      class="Image4"
+      src="https://feelgoodfoodie.net/wp-content/uploads/2023/04/Strawberry-Pancakes-TIMG.jpg"
+      alt="strawberry pancakes"
+      width="95"
+      height="150"
+    />
+    <h2>Contents:</h2>
+
+    <ol>
+      <li>
+        <a href="#Recipe"> Recipe </a>
+      </li>
+      <li><a href="#Instructions"> Instructions </a></li>
+      <li><a href="#Sources"> Sources and More</a></li>
+    </ol>
+
+    <h2 id="Recipe"><strong>Blueberry Pancakes:</strong></h2>
+    <h3>Note: Please read all instructions before beginning recipe.</h3>
+
+    <ul>
+      <li>Time:<span class="Time">20 mins</span></li>
+      <li>
+        Serves:
+        <span class="Serves"
+          >As many as you want (depending on measurements)</span
+        >
+      </li>
+    </ul>
+    <div id="Table">
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Blueberries</td>
+            <td>1 1/2 cups</td>
+          </tr>
+          <tr>
+            <td>Flour</td>
+            <td>1 Cup</td>
+          </tr>
+          <tr>
+            <td>White Sugar</td>
+            <td>2 tbsp</td>
+          </tr>
+          <tr>
+            <td>Baking Soda</td>
+            <td>1/4 tsp</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>Pinch</td>
+          </tr>
+          <tr>
+            <td>Egg</td>
+            <td>One</td>
+          </tr>
+          <tr>
+            <td>Melted Butter</td>
+            <td>2 tbsp</td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>3/4 Cup</td>
+          </tr>
+          <tr>
+            <td>Vanilla Extract</td>
+            <td>1 tsp</td>
+          </tr>
+          <tr>
+            <td>White Vinegar</td>
+            <td>1 tsp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 id="Instructions">Instructions:</h2>
+    <div id="Steps">
+      <p class="Stuff">
+        <strong>Step 1:</strong> Whisk dry ingredients.<br />
+        <strong> Step 2:</strong> Add Wet ingredients, whisk until just
+        incorporated. Stir through blueberries.<br />
+        <strong> Step 3:</strong>Melt about 1 tsp butter in a non stick skillet
+        over medium high heat (medium if strong stove).<br />
+        <strong>Step 4:</strong> Dollop a heaped 1/4 cup into the skillet,
+        quickly nudge into a circle about 10 – 12 cm / 4-5″ wide (smaller =
+        thicker).
+        <br />
+        <strong>Step 5:</strong>Cook for 1 1/2 minutes until a few bubbles
+        appear and underside is mostly golden.<br />
+        <strong>Step 6:</strong>Flip with confidence. Cook a further 1 minute –
+        poke centre, should spring back, underside should be golden.
+        <br /><strong>Step 7:</strong>Repeat with remaining batter, using extra
+        butter as required.<br />
+        <strong>Step 8:</strong>Serve with copious amounts of maple syrup and
+        softened butter<br />
+        <strong>Step 9:</strong>Enjoy!
+      </p>
+    </div>
+    <h3 id="Sources">Sources and More:</h3>
+    <p>
+      <em
+        >Site:
+        <a href="https://www.recipetineats.com/fluffy-blueberry-pancakes/"
+          >Blueberry Pancake Recipe</a
+        ></em
+      >
+    </p>
+    <p>
+      Additional Recipes:<a
+        href="https://tornadoughalli.com/chocolate-chip-pancakes/"
+      >
+        Chocolate Chip Pancake Recipe</a
+      >
+    </p>
+  </body>
 </html>
